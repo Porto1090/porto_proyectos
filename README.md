@@ -1,6 +1,8 @@
 # PORTO_PROYECTOS
-Repositorio para proyectos personales pequeños y experimentales que iré actualizando cada que encuentre al interesante por ahí
+Welcome to PORTO_PROYECTOS, a repository for my small personal and experimental projects that I'll be updating whenever I find something interesting.
 
+## Directory Structure
+```
 porto_proyectos/
 │
 ├── README.md
@@ -8,8 +10,9 @@ porto_proyectos/
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
-├── 02/porto_gpt/
+├── 02_porto_gpt/
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
 └── .gitignore
+```
