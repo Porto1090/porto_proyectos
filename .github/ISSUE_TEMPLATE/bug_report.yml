@@ -6,8 +6,10 @@ assignees:
   - porto1090
 body:
   - type: markdown
-    values: |
+    attributes:
+      value: |
         Thank you for taking the time to report a bug.
+
   - type: textarea
     id: what-happened
     attributes:
@@ -16,6 +18,7 @@ body:
       value: "A bug needs to be solved!"
     validations:
       required: true
+
   - type: dropdown
     id: projects
     attributes:
@@ -25,8 +28,9 @@ body:
       options:
         - 01 - Portfolio
         - 02 - CHAT-GPT
-        - 03 - 
-        - 04 - 
+        - 03 - Project 3
+        - 04 - Project 4
+
   - type: checkboxes
     id: impact
     attributes:
