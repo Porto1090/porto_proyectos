@@ -38,8 +38,5 @@ body:
       description: Check all that apply to describe the impact of this issue.
       options:
         - label: High priority - prevents usage of the project
-          required: true
         - label: Medium priority - affects functionality but there are workarounds
-          required: true
         - label: Low priority - minor issue
-          required: true
