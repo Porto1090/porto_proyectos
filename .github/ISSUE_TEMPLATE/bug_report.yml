@@ -1,63 +1,41 @@
 name: Bug Report
-description: File a bug report.
-title: "[Bug]: "
+description: File a new bug report to help us improve
+title: "[BUG] Problem title"
 labels: ["bug"]
 assignees:
   - porto1090
 body:
   - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
+    values: |
+        Thank you for taking the time to report a bug.
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "A bug needs to be solved!"
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: projects
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
+      label: Project
+      description: Select the project where the issue occurred.
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+        - 01 - Portfolio
+        - 02 - CHAT-GPT
+        - 03 - 
+        - 04 - 
   - type: checkboxes
-    id: terms
+    id: impact
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      label: Impact
+      description: Check all that apply to describe the impact of this issue.
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: High priority - prevents usage of the project
+          required: true
+        - label: Medium priority - affects functionality but there are workarounds
+          required: true
+        - label: Low priority - minor issue
           required: true
