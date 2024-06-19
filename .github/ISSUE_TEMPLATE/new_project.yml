@@ -1,0 +1,44 @@
+name: Project Idea
+description: New project idea that will be future work
+title: "[IDEA] Title of the idea"
+labels: ["project"]
+assignees:
+  - porto1090
+body:
+  - type: input
+    id: project_title
+    attributes:
+      label: Project Title
+      description: Provide a short and descriptive title for your project idea.
+      placeholder: "Enter the title of your project idea"
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description
+    attributes:
+      label: Project Description
+      description: Describe your project idea in detail.
+      placeholder: "Describe your project idea here..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project_category
+    attributes:
+      label: Project Category
+      description: Select the category that best fits your project idea.
+      options:
+        - Web Development
+        - Mobile App
+        - Data Bases
+        - AI/ML
+        - DevOps
+        - Other
+        
+- type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context or information about your project idea, including technologies to be learned or improved, and references where the information or ideas were obtained.
+      placeholder: "Mention any technologies to learn or improve for the project development, as well as references where the information or ideas were obtained..."
