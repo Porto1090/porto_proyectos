@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+    <title>Enigma Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Enigma Calculator</h1>
+        <div id="option-bar">
+            <button class="tab" data-tab="basic-calculator">Básica</button>
+            <button class="tab" data-tab="percentage-calculator">Probabilidades</button>
+            <button class="tab active" data-tab="matrix-calculator">Matrices</button>
+            <button class="tab" data-tab="cuadratic-calculator">Funciones Cuadráticas</button>
+        </div>
+    </header>
+
+    <div id="basic-calculator" class="tab-content">
+        <h2>Calculadora Básica</h2>
+        <div class="card-section">
+            <div class="card-result">
+                <p id="operation">&nbsp;</p>
+                <p id="result">0</p>
+            </div>
+            <div class="card-calculator">
+                <div class="card-calculator-row">
+                    <button class="operation" operation="(">(</button>
+                    <button class="operation" operation=")">)</button>
+                    <button id="delete">DEL</button>
+                    <button id="clear">AC</button>
+                </div>
+                <div class="card-calculator-row">
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operation" operation="/">/</button>
+                </div>
+                <div class="card-calculator-row">
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operation" operation="*">x</button>
+                </div>
+                <div class="card-calculator-row">
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operation" operation="-">-</button>
+                </div>  
+                <div class="card-calculator-row">
+                    <button class="number">0</button>
+                    <button class="number">.</button>
+                    <button id="equal">=</button>
+                    <button class="operation" operation="+">+</button>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <div id="percentage-calculator" class="tab-content">
+        <h2>Calculadora de Porcentajes</h2>
+        <div class="percentage-tool">
+            <div class="percentage-tool-row">
+                <p>CUÁNTO ES</p>
+                <input type="number" id="percentage-1">
+                <p>% DE</p>
+                <input type="number" id="percentage-2">
+                <p>?</p>
+            </div>
+            <div class="percentage-tool-row">
+                <button class="percentage-calculate" index="1">CALCULAR</button>
+                <input type="number" id="result-1">
+            </div>
+        </div>
+        <div class="percentage-tool">
+            <div class="percentage-tool-row">
+                <input type="number" id="percentage-3">
+                <p>ES QUE PORCENTAJE DE</p>
+                <input type="number" id="percentage-4">
+                <p>?</p>
+            </div>
+            <div class="percentage-tool-row">
+                <button class="percentage-calculate" index="2">CALCULAR</button>
+                <input type="number" id="result-2">
+                <p>%</p>
+            </div>
+        </div>
+        <div class="percentage-tool">
+            <div class="percentage-tool-row">
+                <p>CUAL ES EL PORCENTAJE DE INCREMENTO/DECREMENTO DE</p>
+                <input type="number" id="percentage-5">
+                <p>A</p>
+                <input type="number" id="percentage-6">
+                <p>?</p>
+            </div>
+            <div class="percentage-tool-row">
+                <button class="percentage-calculate" index="3">CALCULAR</button>
+                <input type="number" id="result-3">
+                <p>%</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="matrix-calculator" class="tab-content active">
+        <h2>Calculadora de Matrices</h2>
+        <div id="matrix-selector">
+            <p>LAS DIMENSIONES DE TU MATRIZ ES: </p>
+            <input type="number" id="matrix-x">
+            <p>X</p>
+            <input type="number" id="matrix-y">
+            <button id="matrix-create">CREAR</button>
+        </div>
+        <ul id="matrix-array">
+            <p>YOUR MATRIX WILL BE HERE!</p>
+        </ul>
+    </div>
+
+    <div id="cuadratic-calculator" class="tab-content">
+        <h2>Calculadora de Funciones Cuadráticas</h2>
+    </div>
+
+    <template id="matrix-template">
+        <input type="number" class="matrix-input">
+    </template>
+    <template id="matrix-row-template">
+        <div class="matrix-row"></div>
+    </template>
+</body>
+</html>
