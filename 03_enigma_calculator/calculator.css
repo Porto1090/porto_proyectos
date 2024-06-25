@@ -250,4 +250,13 @@ body {
             margin: 0;
         }        
     }
+
+    #matrix-content {
+        margin: 5rem;
+        padding-bottom: 3rem;
+
+        h3 {
+            padding: 2rem 0;
+        }
+    }
 }
