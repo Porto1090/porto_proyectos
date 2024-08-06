@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tailwind</title>
+</head>
+<body class="bg-gray-900">
+    <header class="bg-slate-500 px-6 shadow text-white">
+        <div class="mx-auto max-w-7xl flex h-16 items-center justify-between">
+            <button class="h-8 w-8 text-white hover:text-black hover:bg-slate-400 rounded-md transition-colors focus:ring-2 focus:ring-slate-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+            </button>
+            <div class="flex items-center">
+                <h3 class="font-bold text-3xl md:text-xl">TAILWIND TREMENDO</h3>
+                <div class="space-x-4 ml-4 hidden md:flex">
+                    <a class="px-3 py-2 text-black" href="#">Home</a>
+                    <a class="text-white px-3 py-2 hover:text-black transition-colors" href="#">About</a>
+                    <a class="text-white px-3 py-2 hover:text-black transition-colors" href="#">Blog</a>
+                    <a class="text-white px-3 py-2 hover:text-black transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <button class="h-6 w-6 text-white hover:text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 4.5V3m0 18v-1.5m9-7.5h-1.5m-15 0H3m14.303-5.303l1.061-1.061M5.636 18.364l1.06-1.06m11.668 1.06l-1.06-1.06M6.696 6.696l-1.06-1.06M16 12a4 4 0 1 1-8 0a4 4 0 0 1 8 0z"/></svg>
+                </button>
+                <button>
+                    <img src="https://ui-avatars.com/api?name=Eduardo+Porto" alt="Eduardo Porto User" class="h-8 w-8 rounded-full border-2 border-gray-900">
+                </button>
+            </div>
+        </div>
+        <div class="hidden space-y-1 pb-3 pt-2 border-t md:hidden">
+            <a href="#" class="block text-black px-3 py-2 rounded-md bg-slate-400 transition-colors">Home</a>
+            <a href="#" class="block text-white hover:text-black px-3 py-2 rounded-md hover:bg-slate-400 transition-colors">About</a>
+            <a href="#" class="block text-white hover:text-black px-3 py-2 rounded-md hover:bg-slate-400 transition-colors">Blog</a>
+            <a href="#" class="block text-white hover:text-black px-3 py-2 rounded-md hover:bg-slate-400 transition-colors">Contact</a>
+        </div>
+    </header>
+    <main class="p-4 text-white">
+        <div class="grid mx-auto max-w-7xl gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <article class="bg-gray-800 shadow-xl rounded-lg overflow-hidden flex flex-col">
+                <div class="h-52"><img class="h-full w-full object-cover object-center" src="img/cobrix.jpg" alt="Cobrix - Lautaro del Campo"></div>
+                <div class="p-5 space-y-5">
+                    <h2 class="text-sm font-semibold text-yellow-300">Cobrix - Lautaro del Campo</h2>
+                    <p class="text-xl font-semibold text-slate-200 leading-tight flex-1">El proyecto Cobrix es una plataforma de streaming de música que permite a los usuarios escuchar música de forma gratuita. La plataforma cuenta con una amplia variedad de géneros musicales y artistas, lo que la convierte en una excelente opción para los amantes de la música. Además, Cobrix ofrece a los artistas la posibilidad de subir su música y llegar a una audiencia más amplia. En este artículo, te contamos todo lo que necesitas saber sobre Cobrix y cómo puedes empezar a disfrutar de la música en esta plataforma.</p>
+                    <h3 class="text-xs text-slate-200 font-semibold flex">"Ganador indiscutible de LVDA IV"</h3>
+                </div>
+                <div class="flex items-center space-x-2 px-5 pb-5">
+                    <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api?name=Lautaro+DelCampo" alt="Lautaro Del Campo">
+                    <div class="flex flex-col justify-center text-xs">
+                        <span>Lautaro del Campo</span>
+                        <span>Jul 22, 2024</span>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-gray-800 shadow-xl rounded-lg overflow-hidden flex flex-col">
+                <div class="h-52"><img class="h-full w-full object-cover object-center" src="img/cobrix.jpg" alt="Cobrix - Lautaro del Campo"></div>
+                <div class="p-5 space-y-5">
+                    <h2 class="text-sm font-semibold text-yellow-300">Cobrix - Lautaro del Campo</h2>
+                    <p class="text-xl font-semibold text-slate-200 leading-tight flex-1">El proyecto Cobrix es una plataforma de streaming de música que permite a los usuarios escuchar música de forma gratuita. La plataforma cuenta con una amplia variedad de géneros musicales y artistas, lo que la convierte en una excelente opción para los amantes de la música. Además, Cobrix ofrece a los artistas la posibilidad de subir su música y llegar a una audiencia más amplia. En este artículo, te contamos todo lo que necesitas saber sobre Cobrix y cómo puedes empezar a disfrutar de la música en esta plataforma.</p>
+                    <h3 class="text-xs text-slate-200 font-semibold flex">"Ganador indiscutible de LVDA IV"</h3>
+                </div>
+                <div class="flex items-center space-x-2 px-5 pb-5">
+                    <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api?name=Lautaro+DelCampo" alt="Lautaro Del Campo">
+                    <div class="flex flex-col justify-center text-xs">
+                        <span>Lautaro del Campo</span>
+                        <span>Jul 22, 2024</span>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-gray-800 shadow-xl rounded-lg overflow-hidden flex flex-col">
+                <div class="h-52"><img class="h-full w-full object-cover object-center" src="img/cobrix.jpg" alt="Cobrix - Lautaro del Campo"></div>
+                <div class="p-5 space-y-5">
+                    <h2 class="text-sm font-semibold text-yellow-300">Cobrix - Lautaro del Campo</h2>
+                    <p class="text-xl font-semibold text-slate-200 leading-tight flex-1">El proyecto Cobrix es una plataforma de streaming de música que permite a los usuarios escuchar música de forma gratuita. La plataforma cuenta con una amplia variedad de géneros musicales y artistas, lo que la convierte en una excelente opción para los amantes de la música. Además, Cobrix ofrece a los artistas la posibilidad de subir su música y llegar a una audiencia más amplia. En este artículo, te contamos todo lo que necesitas saber sobre Cobrix y cómo puedes empezar a disfrutar de la música en esta plataforma.</p>
+                    <h3 class="text-xs text-slate-200 font-semibold flex">"Ganador indiscutible de LVDA IV"</h3>
+                </div>
+                <div class="flex items-center space-x-2 px-5 pb-5">
+                    <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api?name=Lautaro+DelCampo" alt="Lautaro Del Campo">
+                    <div class="flex flex-col justify-center text-xs">
+                        <span>Lautaro del Campo</span>
+                        <span>Jul 22, 2024</span>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-gray-800 shadow-xl rounded-lg overflow-hidden flex flex-col">
+                <div class="h-52"><img class="h-full w-full object-cover object-center" src="img/cobrix.jpg" alt="Cobrix - Lautaro del Campo"></div>
+                <div class="p-5 space-y-5">
+                    <h2 class="text-sm font-semibold text-yellow-300">Cobrix - Lautaro del Campo</h2>
+                    <p class="text-xl font-semibold text-slate-200 leading-tight flex-1">El proyecto Cobrix es una plataforma de streaming de música que permite a los usuarios escuchar música de forma gratuita. La plataforma cuenta con una amplia variedad de géneros musicales y artistas, lo que la convierte en una excelente opción para los amantes de la música. Además, Cobrix ofrece a los artistas la posibilidad de subir su música y llegar a una audiencia más amplia. En este artículo, te contamos todo lo que necesitas saber sobre Cobrix y cómo puedes empezar a disfrutar de la música en esta plataforma.</p>
+                    <h3 class="text-xs text-slate-200 font-semibold flex">"Ganador indiscutible de LVDA IV"</h3>
+                </div>
+                <div class="flex items-center space-x-2 px-5 pb-5">
+                    <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api?name=Lautaro+DelCampo" alt="Lautaro Del Campo">
+                    <div class="flex flex-col justify-center text-xs">
+                        <span>Lautaro del Campo</span>
+                        <span>Jul 22, 2024</span>
+                    </div>
+                </div>
+            </article>
+            <article class="bg-gray-800 shadow-xl rounded-lg overflow-hidden flex flex-col">
+                <div class="h-52"><img class="h-full w-full object-cover object-center" src="img/cobrix.jpg" alt="Cobrix - Lautaro del Campo"></div>
+                <div class="p-5 space-y-5">
+                    <h2 class="text-sm font-semibold text-yellow-300">Cobrix - Lautaro del Campo</h2>
+                    <p class="text-xl font-semibold text-slate-200 leading-tight flex-1">El proyecto Cobrix es una plataforma de streaming de música que permite a los usuarios escuchar música de forma gratuita. La plataforma cuenta con una amplia variedad de géneros musicales y artistas, lo que la convierte en una excelente opción para los amantes de la música. Además, Cobrix ofrece a los artistas la posibilidad de subir su música y llegar a una audiencia más amplia. En este artículo, te contamos todo lo que necesitas saber sobre Cobrix y cómo puedes empezar a disfrutar de la música en esta plataforma.</p>
+                    <h3 class="text-xs text-slate-200 font-semibold flex">"Ganador indiscutible de LVDA IV"</h3>
+                </div>
+                <div class="flex items-center space-x-2 px-5 pb-5">
+                    <img class="w-10 h-10 rounded-full" src="https://ui-avatars.com/api?name=Lautaro+DelCampo" alt="Lautaro Del Campo">
+                    <div class="flex flex-col justify-center text-xs">
+                        <span>Lautaro del Campo</span>
+                        <span>Jul 22, 2024</span>
+                    </div>
+                </div>
+            </article>
+             
+        </div>
+    </main>
+    <footer class="text-white py-10">
+        <div class="flex flex-col items-center space-y-4 md:flex-row md:justify-between max-w-7xl mx-auto md:px-5 md:space-y-0">
+            <div class="text-center text-sm text-slate-300">
+                © 2024 Página de aprendizaje Tailwind
+            </div>
+            <div class="flex gap-4">
+                <svg role="img" class="w-6 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <svg role="img" class="w-6 hover:text-yellow-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                <svg role="img" class="w-6 hover:text-yellow-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub Copilot</title><path d="M23.922 16.997C23.061 18.492 18.063 22.02 12 22.02 5.937 22.02.939 18.492.078 16.997A.641.641 0 0 1 0 16.741v-2.869a.883.883 0 0 1 .053-.22c.372-.935 1.347-2.292 2.605-2.656.167-.429.414-1.055.644-1.517a10.098 10.098 0 0 1-.052-1.086c0-1.331.282-2.499 1.132-3.368.397-.406.89-.717 1.474-.952C7.255 2.937 9.248 1.98 11.978 1.98c2.731 0 4.767.957 6.166 2.093.584.235 1.077.546 1.474.952.85.869 1.132 2.037 1.132 3.368 0 .368-.014.733-.052 1.086.23.462.477 1.088.644 1.517 1.258.364 2.233 1.721 2.605 2.656a.841.841 0 0 1 .053.22v2.869a.641.641 0 0 1-.078.256Zm-11.75-5.992h-.344a4.359 4.359 0 0 1-.355.508c-.77.947-1.918 1.492-3.508 1.492-1.725 0-2.989-.359-3.782-1.259a2.137 2.137 0 0 1-.085-.104L4 11.746v6.585c1.435.779 4.514 2.179 8 2.179 3.486 0 6.565-1.4 8-2.179v-6.585l-.098-.104s-.033.045-.085.104c-.793.9-2.057 1.259-3.782 1.259-1.59 0-2.738-.545-3.508-1.492a4.359 4.359 0 0 1-.355-.508Zm2.328 3.25c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm-5 0c.549 0 1 .451 1 1v2c0 .549-.451 1-1 1-.549 0-1-.451-1-1v-2c0-.549.451-1 1-1Zm3.313-6.185c.136 1.057.403 1.913.878 2.497.442.544 1.134.938 2.344.938 1.573 0 2.292-.337 2.657-.751.384-.435.558-1.15.558-2.361 0-1.14-.243-1.847-.705-2.319-.477-.488-1.319-.862-2.824-1.025-1.487-.161-2.192.138-2.533.529-.269.307-.437.808-.438 1.578v.021c0 .265.021.562.063.893Zm-1.626 0c.042-.331.063-.628.063-.894v-.02c-.001-.77-.169-1.271-.438-1.578-.341-.391-1.046-.69-2.533-.529-1.505.163-2.347.537-2.824 1.025-.462.472-.705 1.179-.705 2.319 0 1.211.175 1.926.558 2.361.365.414 1.084.751 2.657.751 1.21 0 1.902-.394 2.344-.938.475-.584.742-1.44.878-2.497Z"/></svg>
+                <svg role="img" class="w-6 hover:text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
